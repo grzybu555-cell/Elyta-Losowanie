@@ -38,3 +38,14 @@ ul {
 li {
     margin: 5px 0;
 }
+
+.losujBtn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background: #28a745;
+    color: white;
+    margin-bottom: 20px;
+}
