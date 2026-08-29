@@ -178,3 +178,4 @@ ${ostatniaB.map(p => p.name).join("\n")}
 function dodajZawodnika() {
     alert("Telefon działa!");
 }
+
