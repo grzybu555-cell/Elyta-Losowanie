@@ -159,11 +159,11 @@ function wyslijWhatsApp() {
     let tekst =
 `🏐 LOSOWANIE SKŁADÓW
 
-🔵 NIEBIESCY
+🟢 ZIELONI
 
 ${ostatniaA.map(p => p.name).join("\n")}
 
-🔴 CZERWONI
+🟡 ZŁOCI
 
 ${ostatniaB.map(p => p.name).join("\n")}
 `;
