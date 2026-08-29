@@ -1,1 +1,15 @@
-
+{
+  "name": "Volley Elyta Generator",
+  "short_name": "Volley Elyta",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#2ea043",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
