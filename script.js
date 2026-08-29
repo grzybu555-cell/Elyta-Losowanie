@@ -196,8 +196,12 @@ function dodajZawodnika() {
 
     pokazZawodnikow();
 
-    document.getElementById(
-        `p${players.length - 1}`
-    ).checked = true;
+   document.getElementById("players").innerHTML = "";
+
+pokazZawodnikow();
+
+document.getElementById(
+    `p${players.length - 1}`
+).checked = true;
 
 }
