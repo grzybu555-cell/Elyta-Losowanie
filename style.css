@@ -80,3 +80,12 @@ body::before {
     pointer-events: none;
     z-index: -1;
 }
+body {
+    background-color: #f3f3f3;
+}
+#players,
+.team,
+.menuButtons {
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 12px;
+}
