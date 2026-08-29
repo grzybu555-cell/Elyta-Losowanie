@@ -72,9 +72,10 @@ body::before {
     background-image: url("logo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70%;
 
-    opacity: 0.08;
+    background-size: 95%;
+
+    opacity: 0.18;
 
     pointer-events: none;
     z-index: -1;
