@@ -176,7 +176,8 @@ ${ostatniaB.map(p => p.name).join("\n")}
 }
 
 function dodajZawodnika() {
-
+    alert("Telefon działa!");
+}
     const nazwa = prompt("Podaj imię i nazwisko zawodnika");
 
     if (!nazwa) return;
