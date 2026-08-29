@@ -198,4 +198,6 @@ function dodajZawodnika() {
 
     document.getElementById(
         `p${players.length - 1}`
-    ).checked
+    ).checked = true;
+
+}
