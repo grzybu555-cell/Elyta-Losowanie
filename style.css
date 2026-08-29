@@ -93,9 +93,9 @@ body {
 
     body::before {
 
-        background-size: 170%;
+        background-size: 150%;
         background-position: center center;
-        opacity: 0.18;
+        opacity: 0.25;
 
     }
 
