@@ -174,3 +174,28 @@ ${ostatniaB.map(p => p.name).join("\n")}
         "_blank"
     );
 }
+
+function dodajZawodnika() {
+
+    const nazwa = prompt("Podaj imię i nazwisko zawodnika");
+
+    if (!nazwa) return;
+
+    const poziom = Number(
+        prompt("Podaj poziom zawodnika (1-6)")
+    );
+
+    if (isNaN(poziom)) return;
+
+    players.push({
+        name: nazwa,
+        level: poziom
+    });
+
+    document.getElementById("players").innerHTML = "";
+
+    pokazZawodnikow();
+
+    document.getElementById(
+        `p${players.length - 1}`
+    ).checked
