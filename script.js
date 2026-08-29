@@ -187,16 +187,12 @@ function dodajZawodnika() {
 
     if (isNaN(poziom)) return;
 
-    players.push({
-        name: nazwa,
-        level: poziom
-    });
+   players.push({
+    name: nazwa,
+    level: poziom
+});
 
-    document.getElementById("players").innerHTML = "";
-
-    pokazZawodnikow();
-
-   document.getElementById("players").innerHTML = "";
+document.getElementById("players").innerHTML = "";
 
 pokazZawodnikow();
 
@@ -205,3 +201,4 @@ document.getElementById(
 ).checked = true;
 
 }
+`
