@@ -89,3 +89,13 @@ body {
     background-color: rgba(255,255,255,0.85);
     border-radius: 12px;
 }
+@media (max-width: 768px) {
+
+    body::before {
+
+        background-size: 220%;
+        opacity: 0.25;
+
+    }
+
+}
