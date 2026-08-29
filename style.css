@@ -93,9 +93,11 @@ body {
 
     body::before {
 
-        background-size: 220%;
-        opacity: 0.25;
+        background-size: 250%;
+        background-position: center center;
+        opacity: 0.18;
 
     }
 
 }
+``
