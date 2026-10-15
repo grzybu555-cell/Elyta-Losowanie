@@ -72,18 +72,13 @@ function losujDruzyny() {
         let sumaA = 0;
         let sumaB = 0;
 
-        mieszani.forEach(player => {
+        const polowa = Math.ceil(mieszani.length / 2);
 
-            if (sumaA <= sumaB) {
-                teamA.push(player);
-                sumaA += player.level;
-            } else {
-                teamB.push(player);
-                sumaB += player.level;
-            }
+teamA.push(...mieszani.slice(0, polowa));
+teamB.push(...mieszani.slice(polowa));
 
-        });
-
+sumaA = teamA.reduce((s, p) => s + p.level, 0);
+sumaB = teamB.reduce((s, p) => s + p.level, 0);
         const roznica = Math.abs(sumaA - sumaB);
 
         if (roznica < najmniejszaRoznica) {
