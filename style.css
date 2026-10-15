@@ -96,5 +96,11 @@ body {
         opacity: 0.25;
 
     }
+#teamA li,
+#teamB li {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 4px 0;
+}
 
 }
