@@ -30,13 +30,17 @@ function pokazZawodnikow() {
         div.innerHTML += `
         <div>
             <input type="checkbox"
-                   id="p${index}">
+       id="p${index}"
+       onchange="aktualizujLicznik()">
            <label>
 ${player.name}
 </label>
         </div>
         `;
     });
+
+    aktualizujLicznik();
+    
 }
 
 function losujDruzyny() {
@@ -129,18 +133,20 @@ function zaznaczWszystkich() {
     players.forEach((player, index) => {
 
         document.getElementById(`p${index}`).checked = true;
-
     });
-
+    
+aktualizujLicznik();
+    
 }
 function odznaczWszystkich() {
 
     players.forEach((player, index) => {
 
         document.getElementById(`p${index}`).checked = false;
-
     });
-
+    
+aktualizujLicznik();
+    
 }
 function wyslijWhatsApp() {
 
@@ -198,4 +204,21 @@ function dodajZawodnika() {
     document.getElementById(
         `p${players.length - 1}`
     ).checked = true;
+}
+function aktualizujLicznik() {
+
+    let liczba = 0;
+
+    players.forEach((player, index) => {
+
+        const checkbox = document.getElementById(`p${index}`);
+
+        if (checkbox && checkbox.checked) {
+            liczba++;
+        }
+
+    });
+
+    document.getElementById("licznik").innerText =
+        `🏐 Obecnych: ${liczba}`;
 }
