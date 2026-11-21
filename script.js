@@ -208,11 +208,10 @@ function dodajZawodnika() {
 }
 function aktualizujLicznik() {
 
-    let liczba = document.querySelectorAll(
-        '#players input[type="checkbox"]:checked'
-    ).length;
+    let liczba = document.querySelectorAll("input[type='checkbox']:checked").length;
 
-    document.getElementById("licznik").innerText =
-        `🏐 Obecnych: ${liczba}`;
-    
+    console.log("Obecnych:", liczba);
+
+    document.getElementById("licznik").innerHTML =
+        "🏐 Obecnych: " + liczba;
 }
