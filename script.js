@@ -213,5 +213,5 @@ function aktualizujLicznik() {
     console.log("Obecnych:", liczba);
 
     document.getElementById("licznik").innerHTML =
-        "🏐 Obecnych: " + liczba;
+        "☑️ Obecnych: " + liczba;
 }
