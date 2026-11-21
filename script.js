@@ -207,17 +207,9 @@ function dodajZawodnika() {
 }
 function aktualizujLicznik() {
 
-    let liczba = 0;
-
-    players.forEach((player, index) => {
-
-        const checkbox = document.getElementById(`p${index}`);
-
-        if (checkbox && checkbox.checked) {
-            liczba++;
-        }
-
-    });
+    let liczba = document.querySelectorAll(
+        '#players input[type="checkbox"]:checked'
+    ).length;
 
     document.getElementById("licznik").innerText =
         `🏐 Obecnych: ${liczba}`;
