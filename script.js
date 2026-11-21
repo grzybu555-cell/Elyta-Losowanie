@@ -212,6 +212,6 @@ function aktualizujLicznik() {
 
     console.log("Obecnych:", liczba);
 
-    document.getElementById("licznik").innerHTML =
-    "👥 Obecnych: " + liczba;
+  document.getElementById("licznik").innerText =
+    `👥 Obecnych: ${liczba}`;
 }
