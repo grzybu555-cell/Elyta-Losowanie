@@ -1,3 +1,4 @@
+
 let ostatniaA = [];
 let ostatniaB = [];
 let historia =
@@ -213,4 +214,5 @@ function aktualizujLicznik() {
 
     document.getElementById("licznik").innerText =
         `🏐 Obecnych: ${liczba}`;
+    
 }
