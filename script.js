@@ -208,10 +208,24 @@ function dodajZawodnika() {
 }
 function aktualizujLicznik() {
 
-    let liczba = document.querySelectorAll("input[type='checkbox']:checked").length;
+    let liczba = document.querySelectorAll(
+        "input[type='checkbox']:checked"
+    ).length;
 
-    console.log("Obecnych:", liczba);
+    let tekst;
 
-  document.getElementById("licznik").innerText =
-    `👥 Obecnych: ${liczba}`;
+    if (liczba === 1) {
+        tekst = "osoba";
+    } else if (
+        liczba % 10 >= 2 &&
+        liczba % 10 <= 4 &&
+        (liczba < 10 || liczba > 20)
+    ) {
+        tekst = "osoby";
+    } else {
+        tekst = "osób";
+    }
+
+    document.getElementById("licznik").innerText =
+        `👥 Obecnych: ${liczba} ${tekst}`;
 }
